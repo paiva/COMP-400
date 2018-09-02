@@ -13,89 +13,110 @@
   <div class="reveal">
     <div class="slides">
 
+      <!-- ############################## -->
+
+      <section id="blankslide">
+
+      </section>
+
       <!-- ****************************** -->
 
-      <section id="top">
+
       <section id="title">
         <h1>PrometheusDB</h1>
 	<h3>AI Database in the Prometheus Architecture</h2>
         <h3>Santiago Paiva</h3>
         <h5>COMP 400<br>September 5th, 2018</h5>
       </section>
-      </section>
 
       <!-- ****************************** -->
 
       <section id="overview">
         <h2>Presentation Overview</h2>
-
+        <div align="left" style="padding-left: 20%">
         <ul>
           <li>Introduction</li>
-	  <li>Prometheus AI</li>
-	  <li>Prometheus DB</li>
-	  <li>Prometheus WEB</li>
+	        <li>Prometheus AI</li>
+	        <li>Prometheus DB</li>
+	        <li>Prometheus WEB</li>
           <li>Conclusion</li>
+          <li>Q &amp; A</li>
         </ul>
+      </div>
       </section>
 
       <!-- ############################## -->
 
-      <section id="blankslide">
+      <section id="blankslide2">
       </section>
 
       <!-- ############################## -->
 
-      <section id="topic1">
-        <h2>Topic 1</h2>
+      <section id="introduction">
+        <h2>Introduction</h2>
 
-        This is a <strong>strong</strong> statment:
-        <p>
+        Prometheus is an <strong>abstraction</strong> of the mind
+        and a <br> playground for artificial intelligence concepts. <br> <br>
+        It creates a 3D world in which virtual ants (entities)<br> can
+        <i>evolve</i>, <i>interact</i> with each other, and make <br> their own <i>decisions</i>
+
+      </section>
+
+      <!-- ****************************** -->
+
+      <section id="old-architecture">
+        <h2>The Prometheus Architecture</h2>
+
+        <img src="images/g2.png" width="70%" height="70%">
+      </section>
+
+      <!-- ****************************** -->
+
+      <section id="new-architecture">
+        <h2>The <i>New</i> Prometheus Architecture</h2>
+        <img src="images/g3.png" width="80%" height="80%">
+      </section>
+
+      <!-- ****************************** -->
+
+      <section id="part1">
+        <h2>Part 1: Prometheus AI</h2>
+      </section>
+
+      <!-- ****************************** -->
+
+      <section id="prometheus-ai">
+        <h2>Prometheus AI Modules</h2>
+        <img src="images/aimodules.png" width="60%" height="60%">
+      </section>
+
+      <!-- ****************************** -->
+
+      <section id="part2">
+        <h2>Part 2: Prometheus DB</h2>
+      </section>
+
+      <!-- ****************************** -->
+
+      <section id="prometheus-db">
+        <h2>Prometheus DB</h2>
+        <div align="left" style="padding-left: 20%">
         <ul>
-          <li>this is <em>em</em></li>
-          <li>this is  <i>italics</i></li>
+          <li> Capture <strong>in-disk</strong> and <strong>in-RAM</strong> data</li>
+          <ul>
+            <li> In-disk: <i>FileDB</i> (Json format)</li>
+              <li>In-RAM: <i>Log File</i> (Text format)</li>
+          </ul>
+          <li><strong>BIDS</strong> Protocol</li>
+	        <li><strong>API</strong> for each AI Module</li>
         </ul>
+      </div>
       </section>
 
       <!-- ****************************** -->
 
-      <section id="topic2">
-        <h2>Topic 2: An Image</h2>
-
-        <img src="images/neuro_logo.png" width="40%" height="40%">
-      </section>
-
-      <!-- ****************************** -->
-
-      <section id="code">
-        <h2>Code Example</h2>
-
-        Some Script <em>example.py</em>
-    <pre class="transp">
-    <code class="python" data-trim>
-      #!/usr/bin/python
-
-      float   = 0.0
-      counter = 0
-
-      print("Here I am")
-    </code>
-    </pre>
-      <p>Sample unix commands running in the terminal:</p>
-      <pre>
-      <em>$</em> python example.py
-      Here I am
-      </pre>
-      </section>
-
-      <!-- ****************************** -->
-
-      <section id="topic3">
-        <h2>Topic 3</h2>
-
-        Here is another sentence with a <strong>strong</strong> statment.
-        <p class="fragment">Point 1.</p>
-        <p class="fragment">Point 2.</p>
-        <p class="fragment">Point 3.</p>
+      <section id="part3">
+        <h2>Part 3: Prometheus WEB</h2>
       </section>
 
       <!-- ****************************** -->
