@@ -16,17 +16,16 @@
       <!-- ############################## -->
 
       <section id="blankslide">
-
       </section>
 
       <!-- ****************************** -->
 
 
       <section id="title">
-        <h1>PrometheusDB</h1>
+        <h1>Prometheus DB</h1>
 	<h3>AI Database in the Prometheus Architecture</h2>
         <h3>Santiago Paiva</h3>
-        <h5>COMP 400<br>September 5th, 2018</h5>
+        <h5>September 5th, 2018</h5>
       </section>
 
       <!-- ****************************** -->
@@ -36,19 +35,16 @@
         <div align="left" style="padding-left: 20%">
         <ul>
           <li>Introduction</li>
-	        <li>Prometheus AI</li>
-	        <li>Prometheus DB</li>
-	        <li>Prometheus WEB</li>
+	        <li>Part 1: Prometheus AI</li>
+	        <li>Part 2: <strong>Prometheus DB</strong></li>
+	        <li>Part 3: <strong>Prometheus WEB</strong></li>
           <li>Conclusion</li>
+          <li>Future Work</li>
           <li>Q &amp; A</li>
         </ul>
       </div>
       </section>
 
-      <!-- ############################## -->
-
-      <section id="blankslide2">
-      </section>
 
       <!-- ############################## -->
 
@@ -100,15 +96,15 @@
 
       <section id="prometheus-db">
         <h2>Prometheus DB</h2>
-        <div align="left" style="padding-left: 20%">
+        <div align="left" style="padding-left: 22%">
         <ul>
-          <li> Capture <strong>in-disk</strong> and <strong>in-RAM</strong> data</li>
+          <li> Captures <strong>in-disk</strong> and <strong>in-RAM</strong> data</li>
           <ul>
             <li> In-disk: <i>FileDB</i> (Json format)</li>
               <li>In-RAM: <i>Log File</i> (Text format)</li>
           </ul>
-          <li><strong>BIDS</strong> Protocol</li>
-	        <li><strong>API</strong> for each AI Module</li>
+          <li>Follows <strong>BIDS</strong> Protocol</li>
+	        <li>Provides an <strong>API</strong> for each AI Module<br> (Read/Write data)</li>
         </ul>
       </div>
       </section>
@@ -151,11 +147,11 @@
         <div align="left" style="padding-left: 20%">
         <ul>
           <li>URL: <span style="font-family: courier;">
-            prometheus-web.mcgill.io
+            <em>prometheus-web.mcgill.io</em>
           </span></li>
           <li>Written using the <strong>Django</strong> framework</li>
           <li>Serves as a <strong>visualization dashboard</strong></li>
-	        <li>Allows to analyze log files</li>
+	        <li>Allows to <i>analyze</i> log files and <i>visualize</i> behavior</li>
           <li>Provides <strong>RESTful</strong> api</li>
         </ul>
       </div>
@@ -182,7 +178,7 @@
       <section id="prometheus-web-4">
         <h2>Prometheus WEB</h2>
         <h3>Modal +Add Entity</h3>
-        <img src="images/web3.png" width="45%" height="45%">
+        <img src="images/web3.png" width="40%" height="40%">
       </section>
 
       <!-- ****************************** -->
@@ -195,12 +191,63 @@
 
       <!-- ****************************** -->
 
+      <section id="prometheus-web-6">
+        <h2>Prometheus WEB</h2>
+        <h3>RESTful API</h3>
+        <p><em><span style="font-family: courier;">
+          http://prometheus-web.mcgill.io/api/
+        </span></em></p>
+        <pre>
+          <em>$</em> GET /api/
+        </pre>
+        <pre>
+          HTTP 200 OK
+          Allow: GET, POST, HEAD, OPTIONS
+          Content-Type: application/json
+          Vary: Accept
+        </pre>
+    </section>
+
+    <!-- ****************************** -->
+
+      <section id="conclusion">
+        <h2>Conclusion</h2>
+        <div align="left" style="padding-left: 10%">
+        <ul>
+          <li>Developed a way to capture in-disk and in-RAM data</li>
+          <li>Structured and organized data with BIDS format</li>
+          <li>Developed an internal API to read/write data to different Prometheus
+          AI modules</li>
+          <li>Developed a web interface to analyze and visualize data</li>
+          <li>Developed a basic RESTful API via web interface</li>
+        </ul>
+      </div>
+      </section>
+    <!-- ****************************** -->
+
+      <section id="future">
+        <h2>Roadmap: Future Work</h2>
+        <div align="left" style="padding-left: 18%">
+        <ul>
+          <li>API testing with NN data</li>
+          <li>API testting with KN data</li>
+          <li>API testing with ES data</li>
+          <li>API testing with META data</li>
+          <li>Develop more RESTful APIs (POST, PUT)</li>
+          <li>Deploy Prometheus DB and Prometheus WEB on production server</li>
+        </ul>
+      </div>
+      </section>
+
+    <!-- ****************************** -->
+
       <section id="end">
         <h2>Thanks!</h2>
         <h3>Questions?</h3>
       </section>
 
       <!-- ****************************** -->
+
 
     </div>
   </div>
